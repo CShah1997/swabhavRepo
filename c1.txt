@@ -1,1 +1,1 @@
-goodbye c1
+welcome c1

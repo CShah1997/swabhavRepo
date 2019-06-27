@@ -1,0 +1,9 @@
+package com.techlabs.ocp_solution;
+
+public interface Festival {
+
+	protected  static float rate;
+	
+	
+	
+}

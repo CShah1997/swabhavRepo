@@ -1,0 +1,3 @@
+#currentFactory=com.techlabs.factory_method.BMWFactory
+#currentFactory=com.techlabs.factory_method.AudiFactory
+currentFactory=com.techlabs.factory_method.TeslaFactory

@@ -1,0 +1,21 @@
+package com.techlabs.demo_junit;
+
+public class ExpectedException {
+
+	static ExpectedException none()
+	{
+		return null;
+
+	}
+
+	public void expect(Class<IllegalArgumentException> class1) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void expectMessage(boolean equals) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

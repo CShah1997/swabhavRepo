@@ -1,0 +1,5 @@
+package singleton_app;
+
+public class DataService {
+
+}

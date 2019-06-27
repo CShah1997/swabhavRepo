@@ -1,0 +1,46 @@
+package com.techlabs.game;
+
+import com.techlabs.exception.MarkerAlreadyAssignedException;
+
+public class Cell {
+
+	public Marker marker=Marker.EMPTY;
+	public int row,column;
+
+//	public Cell(int row, int column) {
+//		super();
+//		this.row=row;
+//		this.column=column;
+//	}
+
+	//Changed...
+	public Marker getMarker() {
+		return marker;
+	}
+
+	//Changed...
+	public void setMarker(Marker marker) {
+		if(marker.equals(Marker.EMPTY))
+		{
+			this.marker = marker;
+		}
+		else
+		{
+			throw new MarkerAlreadyAssignedException();
+		}
+	}
+	
+	//Changed...
+	public void mark() {
+	      switch (marker) {
+	         case X:  setMarker(Marker.X);System.out.print(getMarker()); break;
+	         case O: setMarker(Marker.O);System.out.print(getMarker()); break;
+	         case EMPTY:  System.out.print(getMarker()); break;
+	      }
+	   }
+
+	public void clear() {
+		Marker marker=Marker.EMPTY;
+	}
+
+}

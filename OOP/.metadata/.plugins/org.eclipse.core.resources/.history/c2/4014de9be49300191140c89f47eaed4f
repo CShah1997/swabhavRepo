@@ -1,0 +1,7 @@
+package com.techlabs.strategy_pattern;
+
+public class AdditionOperation implements Strategy{
+
+	
+	
+}

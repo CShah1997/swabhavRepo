@@ -1,0 +1,30 @@
+package com.techlabs.dip_voilation;
+
+public class TaxCalculator implements DBLogger, FileLogger {
+
+	private LogType log;
+
+	public TaxCalculator(LogType log) {
+		super();
+		this.log = log;
+	}
+
+	public int calculateTax(int amount, int rate) {
+		int r = 0;
+		try {
+			r = amount / rate;
+		} catch (Exception e) {
+			if (log == LogType.DB) {
+				
+				e.getStackTrace();
+				
+			}
+		}
+//		/return r;
+	}
+
+	public void log(String msg) {
+		System.out.println(log);
+	}
+
+}

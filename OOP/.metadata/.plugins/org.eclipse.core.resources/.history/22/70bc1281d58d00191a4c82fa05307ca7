@@ -1,0 +1,17 @@
+package com.techlabs.human_app.test;
+
+import com.techlabs.human_app.*;
+
+public class HumanTest2 {
+	
+	public static void main(String args[])
+	{
+		Human h1=new Human("Chirag", 21);
+		Human h2=new Human("Dev",20);
+		Human h3=new Human("RAj",18);
+		System.out.println(h1.getCount());
+		System.out.println(h2.getCount());
+		System.out.println(h3.getCount());
+	}
+
+}

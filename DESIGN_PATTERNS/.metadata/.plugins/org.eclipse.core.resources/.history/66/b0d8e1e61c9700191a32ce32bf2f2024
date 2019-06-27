@@ -1,0 +1,12 @@
+package singleton_app_test;
+
+import singleton_app.DataService;
+
+public class DataServiceTest {
+	
+	public static void main(String args[])
+	{
+		DataService sv1=DataService.getI
+	}
+
+}

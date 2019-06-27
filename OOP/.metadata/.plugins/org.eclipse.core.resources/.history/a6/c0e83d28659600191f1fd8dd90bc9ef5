@@ -1,0 +1,28 @@
+package com.techlabs.ocp_solution;
+
+import com.techlabs.ocp_voilation.FestivalType;
+import com.techlabs.ocp_solution.*;
+
+public class FixedDeposit {
+	
+	private String account_number;
+	private String name;
+	private double principle;
+	private float period;
+	
+	
+	public FixedDeposit(String account_number, String name, double principle, float period, Festival festival) {
+		super();
+		this.account_number = account_number;
+		this.name = name;
+		this.principle = principle;
+		this.period = period;
+		this.festival = festival;
+	}
+	
+	public double calculateSimpleInterest()
+	{
+		return principle * Festival.normalRate * period / 100;	
+	}
+
+}

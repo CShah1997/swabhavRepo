@@ -1,0 +1,48 @@
+package com.techlabs.test_class;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import com.techlabs.game.Board;
+import com.techlabs.game.Marker;
+import com.techlabs.game.ResultAnalyzer;
+
+public class ResultAnalyzerTest {
+
+	@Test
+	public void testForWinThreeInSameRow() {
+		Board b=new Board();
+		ResultAnalyzer resultAnalyze=new ResultAnalyzer(b);
+		b.putMarkOnCell(Marker.X, 0, 0);
+		b.putMarkOnCell(Marker.X, 0, 1);
+		b.putMarkOnCell(Marker.X, 0, 2);
+		boolean actual=resultAnalyze.hasWon(Marker.X);
+		boolean expected=true;
+	}
+	
+	@Test
+	public void testForWinThreeInSameColumn() {
+		
+	}
+	
+	@Test
+	public void testForWinThreeInDiagonal() {
+		
+	}
+
+//	@Test
+//	public void testIsDraw() {
+//		fail("Not yet implemented");
+//	}
+//
+//	@Test
+//	public void testHasWon() {
+//		fail("Not yet implemented");
+//	}
+
+}

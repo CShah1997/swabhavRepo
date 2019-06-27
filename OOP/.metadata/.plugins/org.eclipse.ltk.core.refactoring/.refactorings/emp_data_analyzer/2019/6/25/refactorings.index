@@ -1,0 +1,11 @@
+1561092462985	Rename local variable 'loder'
+1561092543598	Rename field 'MANAGER'
+1561092570081	Rename field 'PRESIDENT'
+1561092585574	Rename field 'CLERK'
+1561092598285	Rename field 'SALESMAN'
+1561092612541	Rename field 'ANALYST'
+1561092774207	Rename field 'DEPT_10'
+1561092857004	Rename field 'DEPT_20'
+1561092885011	Rename field 'DEPT_30'
+1561099361441	Infer generic type arguments
+1561100434549	Infer generic type arguments

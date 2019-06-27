@@ -1,0 +1,25 @@
+package com.techlabs.dip_voilation_solution;
+
+import com.techlabs.dip_voilation.LogType;
+import com.techlabs.dip_voilation_solution.*;
+
+public class TaxCalulator {
+	
+	private LogType log;
+	
+	public TaxCalulator(LogType log) {
+		super();
+		this.log = log;
+	}
+	
+	public int calculateTax(int amount, int rate) {
+		int r = 0;
+		try {
+			r = amount / rate;
+		} catch (Exception e) {
+			
+		}
+		return r;
+	}
+
+}

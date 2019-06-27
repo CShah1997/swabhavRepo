@@ -1,0 +1,14 @@
+package com.techlabs.ocp_solution_test;
+
+import com.techlabs.ocp_voilation.FestivalType;
+import com.techlabs.ocp_voilation.FixedDeposit;
+
+public class FixedDepositTest {
+	
+	public static void main(String args[])
+	{
+		FixedDeposit fd1=new FixedDeposit("001", "Dev", 10000, 4, FestivalType.NORMAL);
+		System.out.println(fd1.calculateSimpleInterest());
+	}
+
+}

@@ -1,0 +1,15 @@
+package simple_factory;
+
+public class AutomobileFactory {
+	
+	public IAutoable make(AutoType type)
+	{
+		if(type==AutoType.AUDI)
+		{
+			Audi audi=new Audi();
+		}
+		return null;
+		
+	}
+
+}

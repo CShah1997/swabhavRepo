@@ -1,0 +1,28 @@
+{
+  "C:\\Program Files\\Java\\jre1.8.0_202\\lib\\rt.jar": {
+    "coordinate": "jre:jre:zip:ovrm:1.0.0",
+    "location": "C:\\Program Files\\Java\\jre1.8.0_202\\lib\\rt.jar",
+    "status": "RESOLVED",
+    "error": "Could not transfer artifact jre:jre:zip:ovrm:1.0.0 from/to remote-models (http://download.eclipse.org/recommenders/models/kepler/): GET request of: jre/jre/1.0.0/jre-1.0.0-ovrm.zip from remote-models failed"
+  },
+  "D:\\OOP\\account\\src": {
+    "location": "D:\\OOP\\account\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\OOP\\account\\src\u0027. Skipped."
+  },
+  "D:\\OOP\\employee\\src": {
+    "location": "D:\\OOP\\employee\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\OOP\\employee\\src\u0027. Skipped."
+  },
+  "D:\\OOP\\instrument_app\\src": {
+    "location": "D:\\OOP\\instrument_app\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\OOP\\instrument_app\\src\u0027. Skipped."
+  },
+  "D:\\OOP\\data_analyzer_app\\src": {
+    "location": "D:\\OOP\\data_analyzer_app\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\OOP\\data_analyzer_app\\src\u0027. Skipped."
+  }
+}

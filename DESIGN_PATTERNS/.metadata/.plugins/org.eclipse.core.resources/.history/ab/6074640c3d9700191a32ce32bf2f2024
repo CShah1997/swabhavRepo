@@ -1,0 +1,35 @@
+package com.techlabs.factory_method_test;
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Properties;
+
+import com.techlabs.factory_method.BMWFactory;
+import com.techlabs.factory_method.IAutoFactory;
+import com.techlabs.factory_method.IAutoable;
+
+public class AutomobileTest {
+	
+	public static void main(String args[]) throws IOException
+	{
+//		IAutoFactory factory=new BMWFactory();
+//		IAutoable auto=factory.make();
+		
+//		IAutoFactory factory=BMWFactory.getInstance();
+//		IAutoable auto=factory.make();
+
+//		auto.start();
+//		auto.stop();
+
+			FileReader reader=new FileReader("resource/factory.properties");
+			Properties p=new Properties();
+			//p.load(reader);
+			IAutoFactory factory=p.load(reader).getInstance();
+			IAutoable auto=factory.make();
+			
+	}
+
+}

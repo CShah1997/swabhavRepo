@@ -1,0 +1,22 @@
+package com.techlabs.banking_exception_app;
+
+public class NegativeValueAcception extends RuntimeException {
+	
+	String message;
+	
+	
+	
+
+	public NegativeValueAcception(BankAccount account) {
+		// TODO Auto-generated constructor stub
+		message="Cannot be deposited "+account.getName();
+	}
+
+	
+	
+	public String getBalMessage() {
+		// TODO Auto-generated method stub
+		return message;
+	}
+
+}

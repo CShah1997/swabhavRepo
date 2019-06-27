@@ -1,0 +1,8 @@
+package com.techlabs.dip_voilation;
+
+public enum LogType {
+	
+	FILE, DB;
+	
+
+}

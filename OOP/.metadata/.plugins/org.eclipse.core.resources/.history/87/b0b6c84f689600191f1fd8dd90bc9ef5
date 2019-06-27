@@ -1,0 +1,11 @@
+package com.techlabs.lsp_voilation;
+
+public class Square extends Rectangle{
+
+		private int side;
+
+		public Square(int side) {
+			super();
+			this.side=side;
+		}
+}

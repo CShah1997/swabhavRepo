@@ -1,0 +1,20 @@
+package com.techlabs.demo_junit_test;
+
+
+
+import com.techlabs.demo_junit.*;
+
+
+public class DemoJuitTester {
+	
+	public static void main(String[] args) {
+	      Result result = JUnitCore.runClasses(OperationsTest.class);
+			
+	      for (Failure failure : result.getFailures()) {
+	         System.out.println(failure.toString());
+	      }
+			
+	      System.out.println(result.wasSuccessful());
+	   }
+
+}

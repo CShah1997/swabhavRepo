@@ -1,0 +1,11 @@
+package com.techlabs.factory_method;
+
+public class BMWFactory implements IAutoFactory{
+
+	@Override
+	public IAutoable make() {
+		
+		return new BMW();
+	}
+
+}

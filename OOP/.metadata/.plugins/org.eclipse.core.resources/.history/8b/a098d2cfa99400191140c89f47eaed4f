@@ -1,0 +1,97 @@
+package com.techlabs.banking_exception_app;
+
+import static org.junit.Assert.*;
+import com.techlabs.banking_exception_app.*;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+public class BankAccountTest {
+//
+//	@BeforeClass
+//	public static void setUpBeforeClass() throws Exception {
+//	}
+//
+//	@AfterClass
+//	public static void tearDownAfterClass() throws Exception {
+//	}
+//
+//	@Before
+//	public void setUp() throws Exception {
+//	}
+//
+//	@After
+//	public void tearDown() throws Exception {
+//	}
+
+//	@Test
+//	public void testBankAccountStringLongDouble() {
+//		fail("Not yet implemented");
+//	}
+//
+//	@Test
+//	public void testBankAccountStringLong() {
+//		fail("Not yet implemented");
+//	}
+//
+//	@Test
+//	public void testGetName() {
+//		fail("Not yet implemented");
+//	}
+//
+//	@Test
+//	public void testSetName() {
+//		fail("Not yet implemented");
+//	}
+//
+//	@Test
+//	public void testGetAccountNumber() {
+//		fail("Not yet implemented");
+//	}
+//
+//	@Test
+//	public void testSetAccountNumber() {
+//		fail("Not yet implemented");
+//	}
+//
+//	@Test
+//	public void testGetBalance() {
+//		fail("Not yet implemented");
+//	}
+//
+//	@Test
+//	public void testSetBalance() {
+//		fail("Not yet implemented");
+//	}
+//
+//	@Test
+//	public void testDeposit() {
+//		fail("Not yet implemented");
+//	}
+
+	@Test(expected=InSufficientFundException.class)
+	public void testWithdrawal() {
+		BankAccount acc=new BankAccount("chirag", 567890432122L, 500);
+		acc.withdrawal(50);
+	}
+	
+	@Test(expected=IllegalArgumentException.class)
+	public void withdrawAmount()
+	{
+		
+	}
+
+//	@Test
+//	public void testToString() {
+//		fail("Not yet implemented");
+//	}
+//
+//	@Test
+//	public void testEqualsObject() {
+//		fail("Not yet implemented");
+//	}
+
+}

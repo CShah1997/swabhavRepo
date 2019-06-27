@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;gfg&apos; in &apos;com.techlabs.boxing_unboxing.BoxingUnboxing.main(...)&apos; to &apos;cshah&apos;&#x0D;&#x0A;- Original project: &apos;boxing_unboxing&apos;&#x0D;&#x0A;- Original element: &apos;com.techlabs.boxing_unboxing.BoxingUnboxing.main(String[]).gfg&apos;&#x0D;&#x0A;- Renamed element: &apos;gfg&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;gfg&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.techlabs.boxing_unboxing{BoxingUnboxing.java[BoxingUnboxing~main~\[QString;@gfg!278!297!288!290!QCharacter;!0!false" name="cshah" references="true" stamp="1560275631320" version="1.0"/>
+</session>

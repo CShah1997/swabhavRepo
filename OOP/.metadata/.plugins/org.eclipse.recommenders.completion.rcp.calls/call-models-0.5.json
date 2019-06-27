@@ -1,0 +1,137 @@
+{
+  "D:\\OOP\\overloading_app\\src": {
+    "location": "D:\\OOP\\overloading_app\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\OOP\\overloading_app\\src\u0027. Skipped."
+  },
+  "C:\\Program Files\\Java\\jre1.8.0_202\\lib\\rt.jar": {
+    "location": "C:\\Program Files\\Java\\jre1.8.0_202\\lib\\rt.jar",
+    "status": "UNRESOLVED",
+    "error": "Could not transfer artifact jre:jre:zip:call:1.0.0 from/to remote-models (http://download.eclipse.org/recommenders/models/kepler/): Error transferring file, server returned status code 307"
+  },
+  "D:\\OOP\\pass_by_value\\src": {
+    "location": "D:\\OOP\\pass_by_value\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\OOP\\pass_by_value\\src\u0027. Skipped."
+  },
+  "D:\\OOP\\book_e1\\src": {
+    "location": "D:\\OOP\\book_e1\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\OOP\\book_e1\\src\u0027. Skipped."
+  },
+  "D:\\OOP\\book_e2\\src": {
+    "location": "D:\\OOP\\book_e2\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\OOP\\book_e2\\src\u0027. Skipped."
+  },
+  "D:\\OOP\\book_e4\\src": {
+    "location": "D:\\OOP\\book_e4\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\OOP\\book_e4\\src\u0027. Skipped."
+  },
+  "D:\\OOP\\rectangle_app\\src": {
+    "location": "D:\\OOP\\rectangle_app\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\OOP\\rectangle_app\\src\u0027. Skipped."
+  },
+  "D:\\OOP\\rectangle_encapsulation\\src": {
+    "location": "D:\\OOP\\rectangle_encapsulation\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\OOP\\rectangle_encapsulation\\src\u0027. Skipped."
+  },
+  "D:\\OOP\\circle\\src": {
+    "location": "D:\\OOP\\circle\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\OOP\\circle\\src\u0027. Skipped."
+  },
+  "D:\\OOP\\reflection_java\\src": {
+    "location": "D:\\OOP\\reflection_java\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\OOP\\reflection_java\\src\u0027. Skipped."
+  },
+  "D:\\OOP\\reflection\\src": {
+    "location": "D:\\OOP\\reflection\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\OOP\\reflection\\src\u0027. Skipped."
+  },
+  "D:\\OOP\\serial_deserial\\src": {
+    "location": "D:\\OOP\\serial_deserial\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\OOP\\serial_deserial\\src\u0027. Skipped."
+  },
+  "D:\\OOP\\inheritence\\src": {
+    "location": "D:\\OOP\\inheritence\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\OOP\\inheritence\\src\u0027. Skipped."
+  },
+  "D:\\OOP\\account\\src": {
+    "location": "D:\\OOP\\account\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\OOP\\account\\src\u0027. Skipped."
+  },
+  "D:\\OOP\\employee\\src": {
+    "location": "D:\\OOP\\employee\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\OOP\\employee\\src\u0027. Skipped."
+  },
+  "D:\\OOP\\interface_polymorphism\\src": {
+    "location": "D:\\OOP\\interface_polymorphism\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\OOP\\interface_polymorphism\\src\u0027. Skipped."
+  },
+  "D:\\OOP\\movable_interface\\src": {
+    "location": "D:\\OOP\\movable_interface\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\OOP\\movable_interface\\src\u0027. Skipped."
+  },
+  "D:\\OOP\\guitar\\src": {
+    "location": "D:\\OOP\\guitar\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\OOP\\guitar\\src\u0027. Skipped."
+  },
+  "D:\\OOP\\doug\u0027s_dogs_door\\src": {
+    "location": "D:\\OOP\\doug\u0027s_dogs_door\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\OOP\\doug\u0027s_dogs_door\\src\u0027. Skipped."
+  },
+  "D:\\OOP\\exceptions_app\\src": {
+    "location": "D:\\OOP\\exceptions_app\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\OOP\\exceptions_app\\src\u0027. Skipped."
+  },
+  "D:\\OOP\\instrument_app\\src": {
+    "location": "D:\\OOP\\instrument_app\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\OOP\\instrument_app\\src\u0027. Skipped."
+  },
+  "D:\\OOP\\data_analyzer_app\\src": {
+    "location": "D:\\OOP\\data_analyzer_app\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\OOP\\data_analyzer_app\\src\u0027. Skipped."
+  },
+  "D:\\employee-data-analyzer-app\\employee-data-analyzer-app\\src": {
+    "location": "D:\\employee-data-analyzer-app\\employee-data-analyzer-app\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\employee-data-analyzer-app\\employee-data-analyzer-app\\src\u0027. Skipped."
+  },
+  "E:\\eclipse-java-kepler-SR1-win32-x86_64\\eclipse\\plugins\\org.junit_4.11.0.v201303080030\\junit.jar": {
+    "location": "E:\\eclipse-java-kepler-SR1-win32-x86_64\\eclipse\\plugins\\org.junit_4.11.0.v201303080030\\junit.jar",
+    "status": "UNRESOLVED",
+    "error": "No call model found for \u0027E:\\eclipse-java-kepler-SR1-win32-x86_64\\eclipse\\plugins\\org.junit_4.11.0.v201303080030\\junit.jar\u0027. Neither fingerprint \u00274e031bb61df09069aeb2bffb4019e7a5034a4ee0\u0027 nor symbolic name \u0027junit\u0027 are known."
+  },
+  "D:\\OOP\\demo_junit\\src": {
+    "location": "D:\\OOP\\demo_junit\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\OOP\\demo_junit\\src\u0027. Skipped."
+  },
+  "D:\\OOP\\banking_exception_app\\src": {
+    "location": "D:\\OOP\\banking_exception_app\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\OOP\\banking_exception_app\\src\u0027. Skipped."
+  },
+  "D:\\OOP\\game_tic_tac_toe\\src": {
+    "location": "D:\\OOP\\game_tic_tac_toe\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\OOP\\game_tic_tac_toe\\src\u0027. Skipped."
+  }
+}

@@ -1,0 +1,25 @@
+package com.techlabs.isp_voilation;
+
+public class Manager implements IWorker{
+	
+	public void startWork()
+	{
+		System.out.println("Start working");
+	}
+	
+	public void stopWork()
+	{
+		System.out.println("Stop working");
+	}
+	
+	public void startEat()
+	{
+		System.out.println("Start eating");
+	}
+	
+	public void stopEat()
+	{
+		System.out.println("Stop eating");
+	}
+
+}

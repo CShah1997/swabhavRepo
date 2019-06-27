@@ -1,0 +1,23 @@
+package com.techlabs.lsp_voilation_test;
+
+import com.techlabs.lsp_voilation.Rectangle;
+import com.techlabs.lsp_voilation.Square;
+
+public class RectangleTest {
+	
+	public static void main(String args[])
+	{
+		Rectangle r1=new Rectangle(50, 100);
+		System.out.println(r1);
+		System.out.println(new Square(50));
+	}
+	
+	public void hightShouldNotChangeEvenIfWidthIsChanged(Rectangle r)
+	{
+		int beforeChange=r.getHeight();
+		r.setWidth(r.getWidth()+5);
+		int afterChange=r.getHeight();
+		System.out.println(beforeChange);
+		System.out.println(afterChange);
+	}
+}

@@ -1,0 +1,9 @@
+package com.techlabs.factory_method;
+
+public interface IAutoable {
+
+	public void start();
+	
+	public void stop();
+	
+}

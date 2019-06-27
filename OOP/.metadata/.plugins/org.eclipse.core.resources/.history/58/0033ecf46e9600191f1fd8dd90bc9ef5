@@ -1,0 +1,14 @@
+package com.techlabs.lsp_solution;
+
+public class Rectangle implements Shape {
+	
+	private int width;
+	private int height;
+	
+	
+	public double calculateArea() {
+		return width * height;
+	}
+	
+
+}

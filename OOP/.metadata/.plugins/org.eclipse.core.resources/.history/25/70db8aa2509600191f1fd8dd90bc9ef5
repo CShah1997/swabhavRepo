@@ -1,0 +1,10 @@
+package com.techlabs.srp_solution;
+
+public class InvoicePrinter {
+	
+	public void display()
+	{
+		
+	}
+
+}

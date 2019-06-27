@@ -1,0 +1,8 @@
+package com.techlabs.ocp_solution;
+
+public interface Festival {
+
+	public static double normalRate=0.07;
+	
+	
+}

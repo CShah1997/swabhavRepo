@@ -1,0 +1,38 @@
+package simple_factory;
+
+public class AutomobileFactory {
+	
+	private static AutomobileFactory container;
+	
+	public IAutoable make(AutoType type)
+	{
+		if(type==AutoType.AUDI)
+		{
+			Audi audi=new Audi();
+			return audi;
+		}
+		if(type==AutoType.BMW)
+		{
+			BMW bmw=new BMW();
+			return bmw;
+		}
+		if(type==AutoType.TESLA)
+		{
+			Tesla tesla=new Tesla();
+			return tesla;
+		}
+		return null;
+	}
+	
+	public static AutomobileFactory getInstance()
+	{
+		if(container==null)
+		{
+			container=new AutomobileFactory();
+		}
+		return container;
+	}
+	
+	
+
+}

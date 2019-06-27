@@ -1,0 +1,16 @@
+package com.techlabs.isp_voilation_test;
+
+import com.techlabs.isp_voilation.Manager;
+
+public class WorkerTest {
+	
+	public static void main(String args[])
+	{
+		Manager manager=new Manager();
+		manager.startWork();
+		manager.stopWork();
+		manager.startEat();
+		manager.stopEat();
+	}
+
+}

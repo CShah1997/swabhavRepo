@@ -1,0 +1,34 @@
+package com.techlabs.test_class;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import com.techlabs.exception.MarkerAlreadyAssignedException;
+import com.techlabs.game.Board;
+import com.techlabs.game.Marker;
+
+public class BoardTest {
+
+	@Test(expected = MarkerAlreadyAssignedException.class)
+	public void putMarkInCellWhenMarkAlreadyAssigned() {
+		Board b1=new Board();
+		b1.putMarkOnCell(Marker.O, 0, 0);
+		b1.putMarkOnCell(Marker.X,0, 0);
+	}
+
+	@Test
+	public void testPutMarkOnCell() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testGetMarkOnCell() {
+		fail("Not yet implemented");
+	}
+
+}

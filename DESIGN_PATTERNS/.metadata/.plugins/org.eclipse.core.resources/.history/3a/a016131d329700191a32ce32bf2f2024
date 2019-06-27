@@ -1,0 +1,11 @@
+package com.techlabs.factory_method;
+
+public class AudiFactory implements IAutoFactory{
+
+	@Override
+	public IAutoable make() {
+		return new Audi;
+	}
+	
+
+}

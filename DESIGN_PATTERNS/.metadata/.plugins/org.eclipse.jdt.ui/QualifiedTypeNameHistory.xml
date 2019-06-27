@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="singleton_app.DataService"/>
+<fullyQualifiedTypeName name="simple_factory.Audi"/>
+<fullyQualifiedTypeName name="simple_factory.AutoType"/>
+<fullyQualifiedTypeName name="simple_factory.BMW"/>
+<fullyQualifiedTypeName name="simple_factory.Tesla"/>
+<fullyQualifiedTypeName name="simple_factory.IAutoable"/>
+<fullyQualifiedTypeName name="simple_factory.AutomobileFactory"/>
+<fullyQualifiedTypeName name="com.techlabs.factory_method.BMW"/>
+<fullyQualifiedTypeName name="com.techlabs.factory_method.Audi"/>
+<fullyQualifiedTypeName name="com.techlabs.factory_method.Tesla"/>
+<fullyQualifiedTypeName name="com.techlabs.factory_method.IAutoable"/>
+<fullyQualifiedTypeName name="com.techlabs.factory_method.AudiFactory"/>
+<fullyQualifiedTypeName name="com.techlabs.factory_method.TeslaFactory"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="java.io.FileReader"/>
+<fullyQualifiedTypeName name="java.util.Properties"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
+<fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+<fullyQualifiedTypeName name="com.techlabs.factory_method.BMWFactory"/>
+<fullyQualifiedTypeName name="com.techlabs.factory_method_test.AutomobileTest"/>
+<fullyQualifiedTypeName name="com.techlabs.factory_method.IAutoFactory"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Method"/>
+<fullyQualifiedTypeName name="java.lang.SuppressWarnings"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.techlabs.observer_pattern.Subject"/>
+<fullyQualifiedTypeName name="com.techlabs.observer_pattern.BinaryObserver"/>
+<fullyQualifiedTypeName name="com.techlabs.observer_pattern.OctalObserver"/>
+<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+</qualifiedTypeNameHistroy>

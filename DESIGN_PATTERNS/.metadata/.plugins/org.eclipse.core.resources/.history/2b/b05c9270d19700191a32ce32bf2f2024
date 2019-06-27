@@ -1,0 +1,20 @@
+package com.techlabs.observer_pattern_test;
+
+import com.techlabs.observer_pattern.BinaryObserver;
+import com.techlabs.observer_pattern.OctalObserver;
+import com.techlabs.observer_pattern.Subject;
+
+public class SubjectClientTest {
+	
+	public static void main(String args[])
+	{
+		Subject subject=new Subject();
+		
+		new BinaryObserver(subject);
+		new OctalObserver(subject);
+		
+		System.out.println("1st state change... ");
+		
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.techlabs.srp_voilation;
+
+public class Invoice {
+
+	private String number;
+	private String date;
+	private double cost;
+	private float discount;
+	private float GST;
+	
+	
+	
+}

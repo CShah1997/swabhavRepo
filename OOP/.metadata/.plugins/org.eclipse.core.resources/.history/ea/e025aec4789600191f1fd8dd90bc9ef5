@@ -1,0 +1,40 @@
+package com.techlabs.isp_voilation_test;
+
+import com.techlabs.isp_voilation.Manager;
+import com.techlabs.isp_voilation.Robot;
+import com.techlabs.isp_voilation_solution.IWorkable;
+
+public class WorkerTest {
+	
+	public static void main(String args[])
+	{
+		Manager manager=new Manager();
+		manager.startWork();
+		manager.stopWork();
+		manager.startEat();
+		manager.stopEat();
+		
+		Robot robot=new Robot();
+		robot.startWork();
+		robot.stopWork();
+		robot.startEat();
+		robot.stopEat();
+		
+		atWorkStation(new Robot());
+		atWorkStation(new Manager());
+		atCafeteria(new Robot());
+		atCafeteria(new Manager());
+	}
+
+	private static void atCafeteria(IWorkable w) {
+		System.out.println("At Cafeteria...");
+		w.startWork();
+		w.stopWork();
+	}
+
+	private static void atWorkStation(IWorkable w) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

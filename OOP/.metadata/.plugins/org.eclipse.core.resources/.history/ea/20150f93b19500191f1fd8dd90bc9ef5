@@ -1,0 +1,10 @@
+package com.techlabs.exception;
+
+public class MarkerAlreadyAssignedException extends Exception {
+
+	public MarkerAlreadyAssignedException()
+	{
+		super();
+	}
+	
+}

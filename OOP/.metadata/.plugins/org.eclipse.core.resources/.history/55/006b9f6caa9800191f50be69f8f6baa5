@@ -1,0 +1,53 @@
+package com.techlabs.game;
+import com.techlabs.game.*;
+
+
+public class ResultAnalyzer {
+	
+	private Board board;
+	
+	private static int ROWS=3;
+	private static int COLUMNS=3;
+	
+	
+	
+	public ResultAnalyzer(Board board) {
+		this.board=board;
+	}
+
+	public boolean isDraw()
+	{
+		for(int row=0;row<ROWS;row++)
+			for(int column=0;column<COLUMNS;column++)
+			{
+				if(board.getMarkOnCell(row, column)==Marker.EMPTY)
+				{
+					return false;
+				}
+			}
+		return true;
+	}
+	
+	public boolean hasWon(Marker theMarker)
+	{
+		if(board.getMarkOnCell(0, 0)==theMarker && board.getMarkOnCell(0, 1)==theMarker && board.getMarkOnCell(0, 2)==theMarker)
+			return true;
+		if(board.getMarkOnCell(1, 0)==theMarker && board.getMarkOnCell(1, 1)==theMarker && board.getMarkOnCell(1, 2)==theMarker)
+			return true;
+		if(board.getMarkOnCell(2, 0)==theMarker && board.getMarkOnCell(2, 1)==theMarker && board.getMarkOnCell(2, 2)==theMarker)
+			return true;
+		if(board.getMarkOnCell(0, 0)==theMarker && board.getMarkOnCell(1, 0)==theMarker && board.getMarkOnCell(2, 0)==theMarker)
+			return true;
+		if(board.getMarkOnCell(0, 1)==theMarker && board.getMarkOnCell(1, 1)==theMarker && board.getMarkOnCell(2, 1)==theMarker)
+			return true;
+		if(board.getMarkOnCell(0, 2)==theMarker && board.getMarkOnCell(1, 2)==theMarker && board.getMarkOnCell(2, 2)==theMarker)
+			return true;
+		if(board.getMarkOnCell(0, 0)==theMarker && board.getMarkOnCell(1, 1)==theMarker && board.getMarkOnCell(2, 2)==theMarker)
+			return true;
+		if(board.getMarkOnCell(0, 2)==theMarker && board.getMarkOnCell(1, 1)==theMarker && board.getMarkOnCell(2, 0)==theMarker)
+			return true;
+		return false;
+	}
+}
+	
+	

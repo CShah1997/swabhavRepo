@@ -1,0 +1,5 @@
+package com.techlabs.dip_voilation_solution;
+
+public class DBLogger {
+
+}

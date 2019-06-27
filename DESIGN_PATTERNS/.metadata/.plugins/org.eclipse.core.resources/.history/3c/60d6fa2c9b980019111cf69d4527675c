@@ -1,0 +1,14 @@
+package com.techlabs.subscriber;
+
+import com.techlabs.publisher.Account;
+import com.techlabs.publisher.IBalanceChange;
+
+public class SmsNotification implements IBalanceChange {
+
+	@Override
+	public void balanceChangeNotifier(Account account) {
+		System.out.println("Sending SMS to " + account.getPhone() + " : " + account.getName()
+				+ ", your balance has changed, updated balance is : " + account.getBalance());
+	}
+
+}

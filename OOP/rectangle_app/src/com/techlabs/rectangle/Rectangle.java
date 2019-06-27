@@ -1,0 +1,12 @@
+package com.techlabs.rectangle;
+
+public class Rectangle {
+
+	public int height, width;
+
+	public int calculateArea() {
+		return height * width;
+
+	}
+
+}

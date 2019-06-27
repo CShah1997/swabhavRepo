@@ -1,0 +1,5 @@
+package com.techlabs.ocp_voilation;
+
+public enum FestivalType {
+
+}

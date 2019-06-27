@@ -1,0 +1,38 @@
+package com.techlabs.game_test;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+public class GameTest {
+
+	@Test
+	public void testGame() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testMakePlayerMove() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testPlay() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testShowBoard() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testGetMoveCount() {
+		fail("Not yet implemented");
+	}
+
+}

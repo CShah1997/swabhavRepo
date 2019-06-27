@@ -1,0 +1,20 @@
+package com.techlabs.srp_voilation;
+
+public class Invoice {
+
+	private String number;
+	private String date;
+	private double cost;
+	private float discount;
+	private float gst;
+	
+	public Invoice(String number, String date, double cost, float discount, float gst) {
+		super();
+		this.number = number;
+		this.date = date;
+		this.cost = cost;
+		this.discount = discount;
+		GST = gst;
+	}
+	
+}

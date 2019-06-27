@@ -1,0 +1,7 @@
+package com.techlabs.exceptions;
+
+public class TransactionExcaption extends Exception{
+	public TransactionExcaption() {
+		
+	}
+}

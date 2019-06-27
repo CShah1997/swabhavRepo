@@ -1,0 +1,7 @@
+package com.techlabs.dip_voilation;
+
+public interface FileLogger {
+
+	public void log(String msg);
+	
+}

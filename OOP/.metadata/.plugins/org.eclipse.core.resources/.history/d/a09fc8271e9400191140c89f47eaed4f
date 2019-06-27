@@ -1,0 +1,26 @@
+package com.techlabs.demo_junit;
+
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.rules.ExpectedException;
+
+import junit.framework.TestCase;
+
+public class OperationsTest extends TestCase {
+
+	
+	@Rule
+    public ExpectedException thrown = ExpectedException.none();
+ 
+    @Test
+    public void throwsExceptionWhenNegativeNumbersAreGiven() {
+        thrown.expect(IllegalArgumentException.class);
+        thrown.expectMessage("Cannot enter negative values...");
+        new Operations().add(-1, 3);
+    }
+
+    
+	
+	
+
+}

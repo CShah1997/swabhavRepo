@@ -1,0 +1,13 @@
+package com.techlabs.demo_junit_test;
+import org.junit.runner.*;
+
+import com.techlabs.demo_junit.*;
+
+public class DemoJunitTester{
+	
+	public static void main(String args[])
+	{
+		
+	}
+	
+}

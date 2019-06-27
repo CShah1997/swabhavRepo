@@ -1,0 +1,11 @@
+package com.techlabs.strategy_pattern_test;
+import com.techlabs.strategy_pattern.*;
+
+public class StrategyPatternTest {
+	
+	public static void main(String args[])
+	{
+		
+	}
+
+}

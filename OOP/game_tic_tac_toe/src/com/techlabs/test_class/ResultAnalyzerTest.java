@@ -9,6 +9,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import com.techlabs.game.Board;
+import com.techlabs.game.GameState;
 import com.techlabs.game.Marker;
 import com.techlabs.game.ResultAnalyzer;
 
@@ -20,11 +21,11 @@ public class ResultAnalyzerTest {
 		ResultAnalyzer resultAnalyze=new ResultAnalyzer(board);
 		
 		board.putMarkOnCell(Marker.X, 0, 0);
-		board.putMarkOnCell(Marker.O, 0, 1);
+		board.putMarkOnCell(Marker.X, 0, 1);
 		board.putMarkOnCell(Marker.X, 0, 2);
-		
-		boolean actual=resultAnalyze.hasWon(Marker.X);
-		boolean expected=false;
+		GameState actual=resultAnalyze.analyzeResult();
+		//boolean actual=resultAnalyze.hasWon(Marker.X);
+		GameState expected=GameState.WON;
 		assertEquals(expected, actual);
 	}
 	
@@ -47,11 +48,11 @@ public class ResultAnalyzerTest {
 		Board board=new Board();
 		ResultAnalyzer resultAnalyze=new ResultAnalyzer(board);
 		
-		board.putMarkOnCell(Marker.X, 0, 0);
-		board.putMarkOnCell(Marker.X, 1, 1);
-		board.putMarkOnCell(Marker.X, 2, 2);
+		board.putMarkOnCell(Marker.O, 0, 0);
+		board.putMarkOnCell(Marker.O, 1, 1);
+		board.putMarkOnCell(Marker.O, 2, 2);
 		
-		boolean actual=resultAnalyze.hasWon(Marker.X);
+		boolean actual=resultAnalyze.hasWon(Marker.O);
 		boolean expected=true;
 		assertEquals(expected, actual);
 	}

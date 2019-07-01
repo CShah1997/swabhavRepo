@@ -1,5 +1,7 @@
 package com.techlabs.game;
 
+import java.awt.Component;
+
 import com.techlabs.exception.CellIsAlredyMarkedException;
 import com.techlabs.exception.IllegalAssignException;
 
@@ -73,6 +75,16 @@ public class Game {
 	{
 		return playerMoveCount;
 	}
+
+	public GameState getStatus() {
+		return status;
+	}
+
+	public Player getCurrentTurn() {
+		return currentPlayer;
+	}
+
+	
 	
 
 }

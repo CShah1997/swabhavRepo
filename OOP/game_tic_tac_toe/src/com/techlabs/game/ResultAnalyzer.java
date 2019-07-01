@@ -43,7 +43,7 @@ public class ResultAnalyzer {
 		return false;
 	}
 	
-	private boolean isBoardFilledOut() {
+	public boolean isBoardFilledOut() {
 		for(int row=0;row<ROWS;row++)
 			for(int column=0;column<COLUMNS;column++)
 			{

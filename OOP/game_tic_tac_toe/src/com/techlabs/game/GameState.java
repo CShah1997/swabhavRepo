@@ -12,10 +12,8 @@ public enum GameState {
 //			return "Playing";
 //		case DRAW:
 //			return "Draw";
-//		case PLAYER_X_WON:
-//			return "Player X Won";
-//		case PLAYER_O_WON:
-//			return "Player O Won";
+//		case WON:
+//			return "Won";
 //		default:
 //			return null;
 //		}

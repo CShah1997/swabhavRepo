@@ -1,7 +1,0 @@
-package com.techlabs.lsp_solution;
-
-public interface Square {
-
-	public double calculateArea();
-	
-}

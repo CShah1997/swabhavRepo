@@ -1,5 +1,0 @@
-package com.techlabs.exception;
-
-public class IllegalAssignException extends Exception {
-
-}

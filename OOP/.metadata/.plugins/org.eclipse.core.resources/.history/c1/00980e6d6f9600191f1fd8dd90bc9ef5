@@ -1,5 +1,0 @@
-package com.techlabs.lsp_solution;
-
-public class Square implements Shape{
-
-}

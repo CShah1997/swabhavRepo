@@ -1,7 +1,0 @@
-package com.techlabs.demo_junit;
-
-public class ExpectedException {
-
-	static ExpectedException none();
-
-}

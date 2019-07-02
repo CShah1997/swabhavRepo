@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="singleton_app.DataService"/>
-<fullyQualifiedTypeName name="simple_factory.Audi"/>
-<fullyQualifiedTypeName name="simple_factory.AutoType"/>
-<fullyQualifiedTypeName name="simple_factory.BMW"/>
-<fullyQualifiedTypeName name="simple_factory.Tesla"/>
-<fullyQualifiedTypeName name="simple_factory.IAutoable"/>
-<fullyQualifiedTypeName name="simple_factory.AutomobileFactory"/>
-<fullyQualifiedTypeName name="com.techlabs.factory_method.BMW"/>
 <fullyQualifiedTypeName name="com.techlabs.factory_method.Audi"/>
 <fullyQualifiedTypeName name="com.techlabs.factory_method.Tesla"/>
 <fullyQualifiedTypeName name="com.techlabs.factory_method.IAutoable"/>
@@ -25,7 +17,6 @@
 <fullyQualifiedTypeName name="java.lang.reflect.Method"/>
 <fullyQualifiedTypeName name="java.lang.SuppressWarnings"/>
 <fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="com.techlabs.observer_pattern.Subject"/>
 <fullyQualifiedTypeName name="com.techlabs.observer_pattern.BinaryObserver"/>
 <fullyQualifiedTypeName name="com.techlabs.observer_pattern.OctalObserver"/>
@@ -41,10 +32,32 @@
 <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
 <fullyQualifiedTypeName name="com.techlabs.jframe_event_listener.MyActionListener"/>
 <fullyQualifiedTypeName name="com.techlabs.jframe_event_listener.WelcomeFrameButton"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="javax.swing.JFrame"/>
 <fullyQualifiedTypeName name="jFrame_event_listener_two_on_one.WelcomeFrame"/>
 <fullyQualifiedTypeName name="javax.swing.JButton"/>
 <fullyQualifiedTypeName name="jFrame_event_listener_two_on_one.MyActionListener"/>
 <fullyQualifiedTypeName name="java.awt.Color"/>
+<fullyQualifiedTypeName name="com.techlabs.html_generator.IHtmlElement"/>
+<fullyQualifiedTypeName name="com.techlabs.html_generator.Control"/>
+<fullyQualifiedTypeName name="com.techlabs.html_generator.ControlGroups"/>
+<fullyQualifiedTypeName name="com.techlabs.composite_pattern.IDirectoryComponent"/>
+<fullyQualifiedTypeName name="com.techlabs.composite_pattern.File"/>
+<fullyQualifiedTypeName name="com.techlabs.composite_pattern.Folder"/>
+<fullyQualifiedTypeName name="com.techlabs.company_composite_pattern_employee.FileDataParser"/>
+<fullyQualifiedTypeName name="com.techlabs.company_composite_pattern.Repotees"/>
+<fullyQualifiedTypeName name="com.techlabs.company_composite_pattern.IRepotees"/>
+<fullyQualifiedTypeName name="com.techlabs.company_composite_pattern.RepoteesGroup"/>
+<fullyQualifiedTypeName name="com.techlabs.company_composite_pattern_employee.Employee"/>
+<fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.lang.Iterable"/>
+<fullyQualifiedTypeName name="com.techlabs.adapter_pattern.LinkedList"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
+<fullyQualifiedTypeName name="T"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="com.techlabs.adapter_pattern.MyLinkedList"/>
+<fullyQualifiedTypeName name="com.techlabs.adapter_pattern_test.LinkedListAdapterTest"/>
+<fullyQualifiedTypeName name="com.techlabs.adapter_pattern.IQueue"/>
+<fullyQualifiedTypeName name="com.techlabs.adapter_pattern.LinkedListAdapter"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>

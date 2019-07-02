@@ -1,9 +1,0 @@
-package com.techlabs.test;
-
-public class IncorrectMarkerExceptionForX extends RuntimeException {
-	
-	public IncorrectMarkerExceptionForX() {
-        super(); 
-    } 
-	
-}

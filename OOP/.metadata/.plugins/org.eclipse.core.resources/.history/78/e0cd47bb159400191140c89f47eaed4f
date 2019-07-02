@@ -1,7 +1,0 @@
-package com.techlabs.demo_junit_test;
-
-public class DemoJunitTester{
-	
-	public static void main(String args[])
-	
-}

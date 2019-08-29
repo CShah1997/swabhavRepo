@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+    <body>
+        <form name="myForm" class="container form-horizontal" style="display: block;width: 500px" novalidate>
+            <div class="form-group">
+                <label for="userName" class="control-label col-sm-2">UserName:</label>
+                <div class="col-sm-auto">
+                    <input type="text" ng-model="userName" id="userName" name="userName" placeholder="User Name" class="form-control input-lg" ng-required="true" />                 
+                    <span ng-show="myForm.userName.$dirty && myForm.userName.$invalid"></span>
+                    <span style="color:red" ng-show="myForm.userName.$touched && myForm.userName.$error.required">Username is required.</span>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <label for="password" class="control-label col-sm-2">Password:</label>
+                <div class="col-sm-auto">
+                    <input type="{{inputType}}" ng-model="password" id="password" name="password" placeholder="Password" class="form-control input-lg" ng-required="true" />
+                    <span ng-show="myForm.password.$dirty && myForm.password.$invalid"></span>
+                    <span style="color:red" ng-show="myForm.password.$touched && myForm.password.$error.required">Password is required.</span>
+                </div>
+                <br>
+                <div class="col-sm-auto">
+                    <input type="checkbox" id="checkbox" ng-model="passwordCheckbox" ng-click="hideShowPassword()" />
+                    <label for="checkbox" ng-if="passwordCheckbox">Hide password</label>
+                    <label for="checkbox" ng-if="!passwordCheckbox">Show password</label>  
+                </div>
+            </div>
+
+            <br>
+            
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-auto">
+                    <button type="submit" ng-click="login()" class="col-sm-auto" style="margin:auto;display:block;border-radius: 25px;">Login</button>
+                </div>
+                <div ng-show = "IsVisible" style="color: red;text-align: center;margin: 30px">Please enter valid Username or Password</div>
+            </div>
+        </form>
+    </body>
+</html>

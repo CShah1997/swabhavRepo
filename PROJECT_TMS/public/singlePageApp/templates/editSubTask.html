@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <link href="./bootstrap/css/bootstrap.css">
+    </head>
+    <body>
+        <form name="myForm" class="form-horizontal container" style="display: block;width: 700px" novalidate>
+            <div class="form-group">
+                <label for="subTaskTitle" class="control-label col-sm-2">SubTaskTitle:</label>
+                <div class="col-sm-auto">
+                    <input type="text" ng-model="subTaskTitle" id="subTaskTitle" name="subTaskTitle" placeholder="Sub Task Title" class="form-control input-lg" ng-required="true" />
+                    <span ng-show="myForm.subTaskTitle.$dirty && myForm.subTaskTitle.$invalid"></span>
+                    <span style="color:red" ng-show="myForm.subTaskTitle.$touched && myForm.subTaskTitle.$error.required">SubTaskTitle is required.</span>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <label for="subTaskDescription" class="control-label col-sm-2">SubTaskDescription:</label>
+                <div class="col-sm-auto">
+                    <input type="text" ng-model="subTaskDescription" id="subTaskDescription" name="subTaskDescription" placeholder="Sub Task Description" class="form-control input-lg" ng-required="true" />
+                    <span ng-show="myForm.subTaskDescription.$dirty && myForm.subTaskDescription.$invalid"></span>
+                    <span style="color:red" ng-show="myForm.subTaskDescription.$touched && myForm.subTaskDescription.$error.required">SubTaskDescription is required.</span>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <label for="subTaskCreated" class="control-label col-sm-2">SubTaskCreated:</label>
+                <div class="col-sm-auto">
+                    <input type="date" ng-model="subTaskCreated" id="subTaskCreated" name="subTaskCreated" class="form-control input-lg" ng-required="true" />
+                    <span ng-show="myForm.subTaskCreated.$dirty && myForm.subTaskCreated.$invalid"></span>
+                    <span style="color:red" ng-show="myForm.subTaskCreated.$touched && myForm.subTaskCreated.$error.required">SubTaskCreated is required.</span>
+                </div> 
+            </div>
+            
+            <br>
+
+            <div class="form-group">
+                <label for="subTaskToBeDoneOn" class="control-label col-sm-2">SubTaskToBeDoneOn:</label>
+                <div class="col-sm-auto">
+                    <input type="date" ng-model="subTaskToBeDoneOn" id="subTaskToBeDoneOn" name="subTaskToBeDoneOn" class="form-control input-lg" ng-required="true" />
+                    <span ng-show="myForm.subTaskToBeDoneOn.$dirty && myForm.subTaskToBeDoneOn.$invalid"></span>
+                    <span style="color:red" ng-show="myForm.subTaskToBeDoneOn.$touched && myForm.subTaskToBeDoneOn.$error.required">SubTaskToBeDoneOn is required.</span>
+                </div>
+            </div>
+
+            <br>
+            
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-auto" style="margin:auto;display: block;text-align: center">
+                    <button type="submit" ng-click="back()" class="col-sm-auto" style="margin:auto;border-radius: 25px;">Back</button>
+                    <button type="submit" ng-click="updateSubTask()" class="col-sm-auto" style="margin:auto;border-radius: 25px;">Update SubTask</button>
+                </div>
+                <div ng-show = "IsVisible6" style="color: red;text-align: center;margin: 30px">Please enter all details</div>
+            </div>
+        </form>
+    </body>
+</html>

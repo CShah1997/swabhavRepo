@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <link href="./bootstrap/css/bootstrap.css">
+    </head>
+    <body>
+        <form name="myForm" class="form-horizontal container" style="display: block;width: 800px" novalidate>
+            <div class="form-group">
+                <label for="firstName" class="control-label col-sm-2">First Name:</label>
+                <div class="col-sm-auto">
+                    <input type="text" ng-model="firstName" id="firstName" name="firstName" placeholder="First Name" class="form-control input-lg" ng-required="true" />
+                    <span ng-show="myForm.firstName.$dirty && myForm.firstName.$invalid"></span>
+                    <span style="color:red" ng-show="myForm.firstName.$touched && myForm.firstName.$error.required">FirstName is required.</span>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <label for="lastName" class="control-label col-sm-2">Last Name:</label>
+                <div class="col-sm-auto">
+                    <input type="text" ng-model="lastName" id="lastName" name="lastName" placeholder="Last Name" class="form-control input-lg" ng-required="true" />
+                    <span ng-show="myForm.lastName.$dirty && myForm.lastName.$invalid"></span>
+                    <span style="color:red" ng-show="myForm.lastName.$touched && myForm.lastName.$error.required">LastName is required.</span>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <label for="mobileNumber" class="control-label col-sm-2">Mobile Number:</label>
+                <div class="col-sm-auto">
+                    <input type="tel" ng-model="mobileNumber" id="mobileNumber" pattern="[0-9]{10}" name="mobileNumber" placeholder="Mobile Number" class="form-control input-lg" ng-required="true" />
+                    <span ng-show="myForm.mobileNumber.$dirty && myForm.mobileNumber.$invalid"></span>
+                    <span style="color:red" ng-show="myForm.mobileNumber.$touched && myForm.mobileNumber.$error.required">MobileNumber is required.</span>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <label for="email" class="control-label col-sm-2">Email:</label>
+                <div class="col-sm-auto">
+                    <input type="email" ng-model="email" id="email" name="email" placeholder="Email" class="form-control input-lg" ng-required="true" />
+                    <span ng-show="myForm.email.$dirty && myForm.email.$invalid"></span>
+                    <span style="color:red" ng-show="myForm.email.$touched && myForm.email.$error.required">Email is required.</span>
+                    <span style="color:red" ng-show="myForm.email.$error.email">Invalid email address.</span>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <label for="userName" class="control-label col-sm-2">User Name:</label>
+                <div class="col-sm-auto">
+                    <input type="text" ng-model="userName" id="userName" name="userName" placeholder="User Name" class="form-control input-lg" ng-required="true" />
+                    <span ng-show="myForm.userName.$dirty && myForm.userName.$invalid"></span>
+                    <span style="color:red" ng-show="myForm.userName.$touched && myForm.userName.$error.required">UserName is required.</span>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="form-group"> 
+                <label for="password" class="control-label col-sm-2">Password:</label>
+                <div class="col-sm-auto">
+                    <input type="password" ng-model="password" id="password" name="password" placeholder="Password" class="form-control input-lg" ng-required="true" />
+                    <span ng-show="myForm.password.$dirty && myForm.password.$invalid"></span>
+                    <span style="color:red" ng-show="myForm.password.$touched && myForm.password.$error.required">Password is required.</span>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="form-group" style="margin:auto;display: block;text-align: center">
+                <div class="col-sm-offset-2 col-sm-auto">
+                    <button type="submit" ng-click="back()" class="col-sm-auto" style="margin:auto;border-radius: 25px;">Back</button>
+                    <button type="submit" ng-click="registerUser()" class="col-sm-auto" style="margin:auto;border-radius: 25px;">Register</button>
+                </div>
+                <div ng-show = "IsVisible" style="color: red;text-align: center;margin: 30px">Please enter valid details</div>
+            </div>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link href="./bootstrap/css/bootstrap.css">
+    </head>
+    <table align="center" border="2">
+        <thead>
+            <tr style="text-align: center">
+                <th>Delete</th>
+                <th>SubTask Title</th>
+                <th>SubTask Description</th>
+                <th>SubTask Created</th>
+                <th>SubTask To Be Done On</th>
+                <th>Edit</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="x in subTasksData">
+                <td class="col-sm-offset-2 col-sm-auto"><button id="{{x._id}}" ng-click="deleteSubTask($event)">Delete</button></td>
+                <td>{{x.subTaskTitle}}</td>
+                <td>{{x.subTaskDescription}}</td>
+                <td>{{x.subTaskCreated | date : mm/dd/yyyy}}</td>
+                <td>{{x.subTaskToBeDoneOn | date : mm/dd/yyyy}}</td>
+                <td class="col-sm-offset-2 col-sm-auto"><button id="{{x._id}}" ng-click="editSubTask($event)">Edit SubTask</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <div style="text-align: center;margin: 30px">
+        <button type="submit" ng-click="back()" class="col-sm-auto btn" style="margin:auto;color: rgb(16, 16, 245)">Back</button>
+        <a href="#!/addSubTask" style="padding-left: 20px;">Click To Add SubTask</a>
+    </div>
+</html>
+

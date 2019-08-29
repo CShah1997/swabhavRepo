@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link href="./bootstrap/css/bootstrap.css">
+    </head>
+    <body>
+       
+
+        <p style="font-size: 60px;text-align: center">User Profile</p>
+        <table align="center">
+            <tr>
+                <td><h1>Full Name :</h1></td>
+                <td><h1>{{name.firstName + " " + name.lastName}}</h1></td>
+            </tr>
+            <tr>
+                <td><h1>Contact Details</h1></td>
+            </tr>
+            <tr>
+                <td><h3>Mobile Number :</h3></td>
+                <td><h3>+91 {{mobileNumber}}</h3></td>
+            </tr>
+            <tr>
+                <td><h3>Email :</h3></td>
+                <td><h3>{{email}}</h3></td>
+            </tr>
+            <tr>
+                <td><button style="margin:auto;border-radius: 25px;" class="form-group col-sm-offset-2 col-sm-auto" type="submit" ng-click="editProfile()">Edit User</button></td>
+                <td><button style="margin:auto;border-radius: 25px;" class="form-group col-sm-offset-2 col-sm-auto" type="submit" ng-click="viewTask()">View Tasks</button></td>
+            </tr>
+        </table>
+    </body>
+</html>

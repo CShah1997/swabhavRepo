@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <link href="./bootstrap/css/bootstrap.css">
+    </head>
+    <body>
+        <form name="myForm" class="form-horizontal container" style="display: block;width: 700px" novalidate>
+            <div class="form-group">
+                <label for="taskTitle" class="control-label col-sm-2">TaskTitle:</label>
+                <div class="col-sm-auto">
+                    <input type="text" ng-model="taskTitle" id="taskTitle" name="taskTitle" placeholder="Task Title" class="form-control input-lg" ng-required="true" />
+                    <span ng-show="myForm.taskTitle.$dirty && myForm.taskTitle.$invalid"></span>
+                    <span style="color:red" ng-show="myForm.taskTitle.$touched && myForm.taskTitle.$error.required">TaskTitle is required.</span>
+                </div>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="taskDescription" class="control-label col-sm-2">TaskDescription:</label>
+                <div class="col-sm-auto">
+                    <input type="text" ng-model="taskDescription" id="taskDescription" name="taskDescription" placeholder="Task Description" class="form-control input-lg" ng-required="true" />
+                    <span ng-show="myForm.taskDescription.$dirty && myForm.taskDescription.$invalid"></span>
+                    <span style="color:red" ng-show="myForm.taskDescription.$touched && myForm.taskDescription.$error.required">TaskDescription is required.</span>
+                </div>
+            </div>
+
+            <br>
+            
+            <div>
+                <label for="taskCreated" class="control-label col-sm-2">TaskCreated:</label>
+                <div class="col-sm-auto">
+                    <input type="date" ng-model="taskCreated" id="taskCreated" name="taskCreated" class="form-control input-lg" ng-required="true" />
+                    <span ng-show="myForm.taskCreated.$dirty && myForm.taskCreated.$invalid"></span>
+                    <span style="color:red" ng-show="myForm.taskCreated.$touched && myForm.taskCreated.$error.required">TaskCreated is required.</span>
+                </div>
+            </div>
+
+            <br>
+            
+            <div>
+                <label for="taskToBeDoneOn" class="control-label col-sm-2">TaskToBeDoneOn:</label>
+                <div class="col-sm-auto">
+                    <input type="date" ng-model="taskToBeDoneOn" id="taskToBeDoneOn" name="taskToBeDoneOn" class="form-control input-lg" ng-required="true" />
+                    <span ng-show="myForm.taskToBeDoneOn.$dirty && myForm.taskToBeDoneOn.$invalid"></span>
+                    <span style="color:red" ng-show="myForm.taskToBeDoneOn.$touched && myForm.taskToBeDoneOn.$error.required">TaskToBeDoneOn is required.</span>
+                </div>
+            </div>
+
+            <br>
+            
+            <div>
+                <label for="taskPriority" class="control-label col-sm-2">TaskPriority:</label>
+                <div class="col-sm-auto">
+                    <select ng-model="taskPriority" id="taskPriority" name="taskPriority" class="form-control input-lg" placeholder="Select Priority" ng-required="true">
+                        <option value="" selected>--Select--</option>
+                        <option  value="High">High</option>
+                        <option value="Low">Low</option>
+                    </select>
+                    <span ng-show="myForm.taskPriority.$dirty && myForm.taskPriority.$invalid"></span>
+                    <span style="color:red" ng-show="myForm.taskPriority.$touched && myForm.taskPriority.$error.required">TaskPriority is required.</span>
+                </div>
+            </div>
+            
+            <br>
+            
+            <div>
+                <div class="col-sm-offset-2 col-sm-auto" style="margin:auto;display: block;text-align: center">
+                    <button type="submit" ng-click="back1()" class="col-sm-auto" style="margin:auto;border-radius: 25px;">Back</button>
+                    <button type="submit" ng-click="addTask()" class="col-sm-auto" style="margin:auto;border-radius: 25px;">Add Task</button>
+                </div>
+                <div ng-show = "IsVisible2" style="color: red;text-align: center;margin: 30px">Please enter all details</div>
+            </div>
+        </form>
+    </body>
+</html>

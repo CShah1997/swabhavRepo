@@ -1,6 +1,7 @@
 const express = require('express')
 const cors = require('cors')
 const app = express();
+const jwt = require('jsonwebtoken');
 
 const UserController = require('./controllers/UserController.js')
 const TaskController = require('./controllers/TaskController.js')
@@ -12,9 +13,10 @@ app.use(express.static('public'));
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
 app.use(bodyParser.json());
 
-let userController = new UserController(app,urlencodedParser);
+let userController = new UserController(app,urlencodedParser,jwt);
 let taskController = new TaskController(app,urlencodedParser); 
 let subTaskController = new SubTaskController(app,urlencodedParser); 
+
 
 app.get('/singlePageApp/',function(request,response){
     response.sendFile("./public/index.html")

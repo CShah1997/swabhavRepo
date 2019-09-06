@@ -2,34 +2,39 @@
     <head>
         <link href="./bootstrap/css/bootstrap.css">
     </head>
-    <table align="center" border="2">
-        <thead>
-            <tr style="text-align: center">
-                <th>Delete</th>
-                <th>Task Title</th>
-                <th>Task Description</th>
-                <th>Task Created</th>
-                <th>Task To Be Done On</th>
-                <th>Task Priority</th>
-                <th>Edit</th>
-                <th>View SubTask</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr ng-repeat="x in tasksData.task">
-                <td class="col-sm-offset-2 col-sm-auto"><button id="{{x._id}}" ng-click="deleteTask($event)">Delete</button></td>
-                <td ng-style="{'background-color':'{{ x.taskPriority | priorityFilter }}'}">{{x.taskTitle}}</td>
-                <td>{{x.taskDescription}}</td>
-                <td>{{x.taskCreated | date : mm/dd/yyyy}}</td>
-                <td>{{x.taskToBeDoneOn | date : mm/dd/yyyy}}</td>
-                <td ng-style="{'background-color':'{{ x.taskPriority | priorityFilter }}'}">{{x.taskPriority}}</td>
-                <td class="col-sm-offset-2 col-sm-auto"><button id="{{x._id}}" ng-click="editTask($event)">Edit Task</button></td>
-                <td class="col-sm-offset-2 col-sm-auto"><button id="{{x._id}}" ng-click="viewSubTask($event)">View SubTask</button></td>
-            </tr>
-        </tbody>
-    </table>
-    <div style="text-align: center;margin: 30px">
-        <button type="submit" ng-click="back()" class="col-sm-auto btn" style="margin:auto;color: rgb(16, 16, 245)">Back</button>
-        <a href="#!/addTask" style="padding-left: 20px;">Click To Add Task</a>
-    </div>
+    <body>
+        <h1 style="text-align: center;padding: 30px">Tasks Of User Named: {{loggedInUserName}}</h1>
+        <table align="center" border="2">
+            <thead>
+                <tr style="text-align: center">
+                    <th style="padding: 10px">Delete</th>
+                    <th style="padding: 10px">Task Title</th>
+                    <th style="padding: 10px">Task Description</th>
+                    <th style="padding: 10px">Task Created</th>
+                    <th style="padding: 10px">Task To Be Done On</th>
+                    <th style="padding: 10px">Task Priority</th>
+                    <th style="padding: 10px">Edit</th>
+                    <th style="padding: 10px">View SubTask</th>
+                    <th style="padding: 10px">Number Of Sub Tasks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="x in tasksData.task">
+                    <td class="col-sm-offset-2 col-sm-auto"><button id="{{x._id}}" ng-click="deleteTask($event)">Delete</button></td>
+                    <td ng-style="{'background-color':'{{ x.taskPriority | priorityFilter }}'}">{{x.taskTitle}}</td>
+                    <td>{{x.taskDescription}}</td>
+                    <td>{{x.taskCreated | date : mm/dd/yyyy}}</td>
+                    <td>{{x.taskToBeDoneOn | date : mm/dd/yyyy}}</td>
+                    <td ng-style="{'background-color':'{{ x.taskPriority | priorityFilter }}'}">{{x.taskPriority}}</td>
+                    <td class="col-sm-offset-2 col-sm-auto"><button id="{{x._id}}" ng-click="editTask($event)">Edit Task</button></td>
+                    <td class="col-sm-offset-2 col-sm-auto"><button id="{{x._id}}" ng-click="viewSubTask($event)">View SubTask</button></td>
+                    <td style="text-align: center">{{x.subTaskDataLength}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <div style="text-align: center;margin: 30px">
+            <button type="submit" ng-click="back()" class="col-sm-auto btn" style="margin:auto;color: rgb(16, 16, 245)">Back</button>
+            <a href="#!/addTask" style="padding-left: 20px;">Click To Add Task</a>
+        </div>
+    </body>
 </html>

@@ -30,7 +30,8 @@
                             let data = result.data;
                             if(data.length == 0)
                             {
-                                $window.alert("Invalid Credentials")
+                                // $window.alert("Invalid Credentials")
+                                reject("Invalid Credentials")
                             }
                             else
                             {
@@ -276,6 +277,7 @@
                 }
                 $scope.login=function()
                 {
+                    $scope.processLoad = true;
                     let userName = $scope.userName;
                     let password = $scope.password;
                     if(userName != null && password != null)
@@ -283,21 +285,24 @@
                         taskService.authenticateUser(userName,password)
                         .then(function(result){
                             $localStorage.id = result;
+                            $scope.processLoad = false;
                             $location.path("/user");
                         })
                         .catch(function(err){
-                            console.log("Invalid...")
+                            $scope.processLoad = false;
+                            alert(err)
                         })
                     }
                     else
                     {
                         // alert("Please enter valid Username or Password")
                         $scope.IsVisible = true;
+                        $scope.processLoad = false;
                     }
                 }
             })
 
-            app.controller("registerCtrl",function($scope,$location,taskService){
+            app.controller("registerCtrl",function($scope,$location, $timeout,taskService){
                 $scope.IsVisible = false;
                 $scope.back = function()
                 {
@@ -317,13 +322,15 @@
                     {
                         taskService.registerUser(user)
                         .then(function(result){
-                            console.log(result)
                             alert(result)
                         })
                         .catch(function(err){
                             console.log(err)
                         })
-                        $location.path("/login")   
+                        // $location.path("/login")  
+                        $timeout( function(){
+                            $location.path("/login")
+                        }, 500 ); 
                     }
                     else
                     {
@@ -342,6 +349,7 @@
                     $scope.mobileNumber = result[0].mobileNumber;
                     $scope.email = result[0].email;
                     $scope.userName = result[0].userName;
+                    $localStorage.loggedInUserName = $scope.name.firstName + " " + $scope.name.lastName;
                 }) 
                 $scope.editProfile = function()
                 {
@@ -385,7 +393,7 @@
                         {
                             taskService.editUser($localStorage.id,user)
                             .then(function(result){
-                                console.log(result)
+                                // console.log(result)
                             })
                             .catch(function(err){
                                 console.log(err)
@@ -415,7 +423,15 @@
                 {
                     taskService.getUsersTasks($localStorage.id)
                     .then(function(result){
+                        $scope.loggedInUserName = $localStorage.loggedInUserName;
                         $scope.tasksData = result;
+                        for(let i=0;i<result.task.length;i++)
+                        {
+                            taskService.getUserSubTasks($localStorage.id,result.task[i]._id)
+                            .then(function(result){
+                                $scope.tasksData.task[i].subTaskDataLength = result.length
+                            })
+                        }
                     })
                 }
                 loadTask();
@@ -437,7 +453,7 @@
                     {
                         taskService.addTask($localStorage.id,taskObj)
                         .then(function(result){
-                            console.log(result)
+                            // console.log(result)
                             loadTask();
                             $location.path('/user/tasks');
                         })
@@ -492,6 +508,10 @@
                 $scope.viewSubTask = function(event)
                 {
                     let taskId = event.target.id;
+                    taskService.getSingleTask($localStorage.id,taskId)
+                    .then(function(result){
+                        $localStorage.currentTask = result.task[0].taskTitle;
+                    })
                     $localStorage.taskId = taskId;
                     $location.path('/viewSubTasks')
                 }
@@ -505,6 +525,7 @@
                     taskService.getUserSubTasks($localStorage.id,$localStorage.taskId)
                     .then(function(result){
                         $scope.subTasksData = result;
+                        $scope.currentTask = $localStorage.currentTask;
                     })
                 }
                 displaySubTask();
@@ -524,7 +545,7 @@
                     {
                         taskService.addUserSubTask($localStorage.id,$localStorage.taskId,subTaskObj)
                         .then(function(result){
-                            console.log(result)
+                            // console.log(result)
                             displaySubTask();
                             $location.path('/viewSubTasks');
                         })
@@ -551,7 +572,7 @@
                         let subTaskId = event.target.id;
                         taskService.deleteSubTask($localStorage.id,$localStorage.taskId,subTaskId)
                         .then(function(result){
-                            console.log(result)
+                            // console.log(result)
                             displaySubTask();
                         })
                         .catch(function(err){
@@ -578,6 +599,9 @@
                 $localStorage.loginFlag = false
                 $rootScope.loginState = $localStorage.loginFlag;
                 delete $localStorage.id;
+                delete $localStorage.taskId;
+                delete $localStorage.loggedInUserName;
+                delete $localStorage.currentTask;
                 $location.path('/login')
             })
 

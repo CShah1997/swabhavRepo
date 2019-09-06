@@ -2,7 +2,7 @@ const UserServices = require('../services/UserServices.js')
 
 class UserController
 {
-    constructor(app,urlencodedParser)
+    constructor(app,urlencodedParser,jwt)
     {
 
         let userServices = new UserServices();
@@ -71,6 +71,7 @@ class UserController
             let password = request.body.password;
             userServices.authenticate(userName,password)
             .then(function(result){
+                console.log("Welcome...")
                 response.send(result)
             })
             .catch(function(err){

@@ -11,10 +11,10 @@ class SubTaskController
             let taskId = request.params.taskId;
             subTaskServices.getAllSubTasksByTaskId(id,taskId)
             .then(function(result){
-                response.status(200).send(result)
+                response.send(result)
             })
             .catch(function(err){
-                response.status(404).send(err)
+                response.send(err)
             })
         })    
 
@@ -24,10 +24,10 @@ class SubTaskController
             let subTaskId = request.params.subTaskId;
             subTaskServices.getSingleSubTaskBySubTaskId(id,taskId,subTaskId)
             .then(function(result){
-                response.status(200).send(result)
+                response.send(result)
             })            
             .catch(function(err){
-                response.status(404).send(err)
+                response.send(err)
             })
         })
 
@@ -40,10 +40,10 @@ class SubTaskController
             let subTaskToBeDoneOn = request.body.subTaskToBeDoneOn;
             subTaskServices.addSubTaskByTaskId(id,taskId,subTaskTitle,subTaskDescription,subTaskCreated,subTaskToBeDoneOn)
             .then(function(result){
-                response.status(200).send(result)
+                response.send(result)
             })
             .catch(function(err){
-                response.status(404).send(err)
+                response.send(err)
             })
         })
 
@@ -53,10 +53,10 @@ class SubTaskController
             let subTaskId = request.params.subTaskId;
             subTaskServices.deleteSubTaskBySubTaskId(id,taskId,subTaskId)
             .then(function(result){
-                response.status(200).send(result)
+                response.send(result)
             })
             .catch(function(err){
-                response.status(404).send(err)
+                response.send(err)
             })
         })
 
@@ -70,10 +70,10 @@ class SubTaskController
             let subTaskToBeDoneOn = request.body.subTaskToBeDoneOn;
             subTaskServices.updateSubTaskBySubTaskId(id,taskId,subTaskId,subTaskTitle,subTaskDescription,subTaskCreated,subTaskToBeDoneOn)
             .then(function(result){
-                response.status(200).send(result)
+                response.send(result)
             })
             .catch(function(err){
-                response.status(404).send(err)
+                response.send(err)
             })
         })
     }

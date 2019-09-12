@@ -10,20 +10,20 @@ class UserController
         app.get('/api/v1/users',function(request,response){
             userServices.getAllUsers()
             .then(function(result){
-                response.status(200).send(result)
+                response.send(result)
             })
             .catch(function(err){   
-                response.status(404).send(err)
+                response.send(err)
             })
         })
 
         app.get('/api/v1/users/:id',function(request,response){
             userServices.getUserById(request.params.id)
             .then(function(result){
-                response.status(200).send(response)
+                response.send(response)
             })
             .catch(function(err){
-                response.status(404).send(err)
+                response.send(err)
             })
         })
 
@@ -31,10 +31,10 @@ class UserController
             let dataObj = request.body;
             userServices.registerUser(dataObj)
             .then(function(result){
-                response.status(200).send(result)
+                response.send(result)
             })
             .catch(function(err){
-                response.status(404).send(err)
+                response.send(err)
             })
         })
 
@@ -49,20 +49,20 @@ class UserController
             let task = request.body.task;
             userServices.updateUser(id,firstName,lastName,mobileNumber,email,userName,password)
             .then(function(result){
-                response.status(200).send(result)
+                response.send(result)
             })
             .catch(function(err){
-                response.status(404).send(err)
+                response.send(err)
             })
         })
 
         app.delete('/api/v1/users/:id',function(request,response){
             userServices.deleteUser(request.params.id)
             .then(function(result){
-                response.status(200).send(result)
+                response.send(result)
             })
             .catch(function(err){
-                response.status(404).send(err)
+                response.send(err)
             })
         })
 
@@ -72,10 +72,10 @@ class UserController
             userServices.authenticate(userName,password)
             .then(function(result){
                 console.log("Welcome...")
-                response.status(200).send(result)
+                response.send(result)
             })
             .catch(function(err){
-                response.status(404).send(err)
+                response.send(err)
             })
         })
 

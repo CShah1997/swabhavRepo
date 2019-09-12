@@ -9,10 +9,10 @@ class TaskController
         app.get('/api/v1/users/:id/task',function(request,response){
             taskServices.getUserAllTaskById(request.params.id)
             .then(function(result){
-                response.status(200).send(result)
+                response.send(result)
             })
             .catch(function(err){
-                response.status(404).send(err)
+                response.send(err)
             })
         })    
         
@@ -25,10 +25,10 @@ class TaskController
             let taskPriority = request.body.taskPriority;
             taskServices.addUserTask(id,taskTitle,taskDescription,taskCreated,taskToBeDoneOn,taskPriority)
             .then(function(result){
-                response.status(200).send(result)
+                response.send(result)
             })
             .catch(function(err){
-                response.status(404).send(err)
+                response.send(err)
             })
         })
 
@@ -37,10 +37,10 @@ class TaskController
             let taskId = request.params.taskId;
             taskServices.deleteUserTaskByTaskId(id,taskId)
             .then(function(result){
-                response.status(200).send(result)
+                response.send(result)
             })
             .catch(function(err){
-                response.status(404).send(err)
+                response.send(err)
             })
         })
 
@@ -53,10 +53,10 @@ class TaskController
             let taskPriority = request.body.taskPriority;
             taskServices.updateUserTaskByTaskId(id,taskTitle,taskDescription,taskCreated,taskToBeDoneOn,taskPriority)
             .then(function(result){
-                response.status(200).send(result)
+                response.send(result)
             })            
             .catch(function(err){
-                response.status(404).send(err)
+                response.send(err)
             })
         })
 
@@ -65,10 +65,10 @@ class TaskController
             let taskId = request.params.taskId;
             taskServices.getUserSingleTaskByTaskId(id,taskId)
             .then(function(result){
-                response.status(200).send(result)
+                response.send(result)
             })            
             .catch(function(err){
-                response.status(404).send(err)
+                response.send(err)
             })
         })
     }
